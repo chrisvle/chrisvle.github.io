@@ -437,6 +437,10 @@ Portfolio Style
   padding-top: 10em;
 }
 
+#portfolio img {
+  filter: grayscale(100%);
+}
+
 #portfolio {
   padding: 60px 0;
   text-align: center;
@@ -522,6 +526,22 @@ Work Process Style
   font-size: 48px;
   color: #0d0d0d;
   margin-bottom: 15px;
+}
+
+#work-process span {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+  }
+
+#work-process span:hover {
+  -webkit-transform:scale(2.0); /* Safari and Chrome */
+  -moz-transform:scale(2.0); /* Firefox */
+  -ms-transform:scale(2.0); /* IE 9 */
+  -o-transform:scale(2.0); /* Opera */
+   transform:scale(2.0);
 }
 
 /* ==========================================================================
