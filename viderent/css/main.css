@@ -262,7 +262,7 @@ Sliders Style
 .caption > .container {
   width: auto;
   display: inline-block;
-  padding-top: 15%;
+  padding-top: 20%;
 }
 
 #owl-hero h6 {
@@ -367,6 +367,10 @@ Sliders Style
 /* ==========================================================================
 Welcome Style
 ========================================================================== */
+#welcome p {
+  font-size: 30px;
+}
+
 #welcome {
   padding: 60px 0;
   text-align: center;
@@ -392,7 +396,7 @@ Services Style
 
 #services {
   background: white;
-  padding: 60px 0;
+  padding-bottom: 60px;
   text-align: center;
 }
 #services h2 {
@@ -441,6 +445,10 @@ Services Style
 .client-container {
   width:100%;
   height: 100%;
+}
+
+.client > .col-md-12 {
+  padding-bottom: 45px;
 }
 
 .client-description {
@@ -624,14 +632,14 @@ Work Process Style
 #work-process {
   padding: 60px 0;
   text-align: center;
-  background-color: #24242a;
+  background-color: white;
 }
 #work-process .col-lg-3 {
   margin-top: 40px;
 }
 #work-process h2, light-sep, h6, span, h4 {
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 #work-process h4 {
   text-transform: uppercase;
@@ -639,6 +647,7 @@ Work Process Style
 #work-process span {
   font-size: 48px;
   margin-bottom: 15px;
+  color: black;
 }
 
 /* ==========================================================================
@@ -680,6 +689,10 @@ Fun Facts Style
 /* ==========================================================================
 Our Team Style
 ========================================================================== */
+#team img {
+  height:300px;
+}
+
 #team {
   background-color: #24242a;
   padding: 60px 0;
@@ -699,8 +712,9 @@ Our Team Style
   margin-top: 20px;
   text-transform: uppercase;
   font-weight: 700;
+  color: white;
 }
-#team .team p {
+#team .team p, span {
   color: white;
 }
 #team .team a {
@@ -738,26 +752,35 @@ Testimonials Style
   text-transform: uppercase;
   color: #fff;
 }
-#testimonials p {
+#testimonials h4 {
   color: #fff;
+  padding-top: 30px;
+}
+
+#testimonials h6 {
+  color: grey;
 }
 #testimonials .item .quote {
   margin: 20px auto;
   width: 80%;
 }
-#testimonials .item .quote .right {
+/*#testimonials .item .quote .right {
   margin-left: 40px;
   font-size: 32px;
   color: #fff;
-}
+}*/
 #testimonials .item .quote .left {
   float: left;
   margin-right: 40px;
+  margin-bottom: 40px;
   color: #fff;
 }
 #testimonials .item h5 {
   color: #fff;
-  line-height: 36px;
+  line-height: 20px;
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 70px;
 }
 #testimonials .item h5 span {
   font-weight: 700;

@@ -59,6 +59,7 @@ $(document).ready(function () {
 
         navigation: false, // Show next and prev buttons
         paginationSpeed: 400,
+        pagination: false,
         singleItem: true,
         transitionStyle: "backSlide",
         autoPlay: true
