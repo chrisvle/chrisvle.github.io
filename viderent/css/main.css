@@ -439,8 +439,126 @@ Services Style
 
 
 
+/* ==========================================================================
+Client Style
+========================================================================== */
 
+.orgs h3 {
+  font-size: 45px !important;
+  padding-bottom: 10px;
+}
 
+.client-ind-container {
+  width:100%;
+  height: 100%;
+}
+
+.client-ind > .col-md-12 {
+  padding-bottom: 45px;
+}
+
+.client-ind-description {
+  margin-right: 60px;
+  margin-left: 60px
+  padding-bottom:5em;
+}
+
+.client-ind-description p {
+  text-align: justify;
+  font-size: 16px;
+  padding-right:50px;
+}
+
+.client-ind-description h3 {
+  float: left;
+  margin-top:0px;
+}
+
+.client-ind-photo {
+  width: 40%;
+  height: 40%;
+  padding-bottom: 5em;
+}
+
+#client-ind {
+  padding: 60px 0;
+  text-align: center;
+  height:100%;
+  overflow: auto;
+  background: #24242a;
+}
+
+#client-ind h2 {
+  color: black;
+}
+
+#client-ind i {
+  color: black;
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+  font-size: 5em;
+}
+
+#client-ind i:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+#client-ind h2 {
+  text-transform: uppercase;
+}
+
+#client-ind h3 {
+  color: black;
+  padding-left:40px;
+  font-size:60px;
+}
+
+#client-ind .client-ind {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#client-ind .client-ind h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#client-ind .client-ind p {
+  color: black;
+}
+#client-ind .client-ind a {
+  color: #0d0d0d;
+  font-size: 22px;
+  padding-right: 10px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#client-ind .client-ind a:hover,
+#client-ind .client-ind a:focus,
+#client-ind .client-ind a:active {
+  color: #a3a3a3;
+}
+
+#client-ind a {
+  outline: 0;
+}
+
+.client-ind-row {
+  height: 100%;
+  overflow: auto;
+}
+
+/* ==========================================================================
+Client Style
+========================================================================== */
 
 .client-container {
   width:100%;
@@ -550,17 +668,6 @@ Services Style
   overflow: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
 Portfolio Style
 ========================================================================== */
@@ -586,7 +693,7 @@ Portfolio Style
   display: block;
   position: relative;
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 425px;
 }
 #portfolio .portfolio-box .portfolio-box-caption {
   display: block;
