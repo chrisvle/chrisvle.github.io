@@ -383,6 +383,12 @@ Welcome Style
   margin-bottom: 40px;
 }
 
+#welcome h4 {
+  text-align:justify;
+  letter-spacing: 1px;
+  line-height: 60px
+}
+
 /* ==========================================================================
 Services Style
 ========================================================================== */
@@ -1068,7 +1074,7 @@ Media Queries Style
   }
 
   .team-description p {
-    padding: 0px 50px 100px;
+    padding: 0px 0px 100px;
     margin:auto;
     width: 100%;
   }
@@ -1099,7 +1105,7 @@ Media Queries Style
   }
 
   .container h1 {
-    font-size: 45px;
+    font-size: 30px;
   }
 
   .nav, .navbar-header {
@@ -1108,6 +1114,26 @@ Media Queries Style
 
   .icon-bar {
     background-color: black !important;
+  }
+
+  #welcome h4 {
+    text-align:center;;
+  }
+
+  #portfolio img {
+    filter: grayscale(100%);
+  }
+
+  .team-photo {
+    padding-bottom: 0em;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  #welcome h4 {
+    line-height: 40px;
   }
 
 }
