@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+      }
+    }
+
     /***************** Navbar-Collapse ******************/
 
     $(window).scroll(function () {
@@ -58,7 +68,7 @@ $(document).ready(function () {
     $("#owl-testi").owlCarousel({
 
         navigation: false, // Show next and prev buttons
-        paginationSpeed: 400,
+        paginationSpeed: 1500,
         pagination: false,
         singleItem: true,
         transitionStyle: "backSlide",

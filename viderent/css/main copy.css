@@ -627,20 +627,9 @@ Client Style
 Client Style
 ========================================================================== */
 
-#client .container {
-  width: 60%;
-  font-style: italic;
-}
-
-.item p {
-  color:white;
-}
-
 .client-container {
-  width:75%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  width:100%;
+  height: 100%;
 }
 
 .client > .col-md-12 {
@@ -680,8 +669,8 @@ Client Style
   background: #24242a;
 }
 
-#client > h2, h4 {
-  color: white !important;
+#client h2 {
+  color: white;
 }
 
 #client i {
@@ -704,7 +693,6 @@ Client Style
 
 #client h2 {
   text-transform: uppercase;
-  color: white;
 }
 
 #client h3 {
@@ -717,6 +705,8 @@ Client Style
 }
 #client .client h4 {
   margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 #client .client p {
   color: white;
@@ -749,7 +739,6 @@ Client Style
 Portfolio Style
 ========================================================================== */
 #portfolio {
-  background-color: #24242a;
   padding: 60px 0;
   text-align: center;
 }
@@ -823,6 +812,7 @@ Work Process Style
   margin-top: 40px;
 }
 #work-process h2, light-sep, h6, span, h4 {
+  text-transform: uppercase;
   color: black;
 }
 #work-process h4 {
@@ -838,10 +828,9 @@ Work Process Style
 Fun Facts Style
 ========================================================================== */
 #fun-facts {
-  background: #24242a;
+  background: white;
   padding: 60px 0;
   text-align: center;
-  color:white;
 }
 #fun-facts .col-lg-3 {
   margin-top: 40px;
@@ -849,7 +838,7 @@ Fun Facts Style
 }
 #fun-facts h2 {
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 #fun-facts p {
@@ -857,30 +846,18 @@ Fun Facts Style
 }
 #fun-facts h4 {
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 #fun-facts .number {
-  color: white;
+  color: black;
   font-weight: 700;
   padding: 10px 0;
   margin: 0;
 }
 #fun-facts span {
-  font-size: 20px;
+  font-size: 64px;
   color: black;
   margin-bottom: 15px;
-}
-
-#fun-facts span:hover {
-  color:white;
-}
-
-#fun-facts img {
-  width:250px;
-  height:150px;
-  display: inline-block;
-  margin-top: 50px;
-  margin-right: 25px;
 }
 
 /* ==========================================================================
@@ -891,14 +868,15 @@ Our Team Style
 }
 
 #team {
-  background-color: white;
+  background-color: #24242a;
   padding: 60px 0;
   text-align: center;
 }
 #team h2 {
   text-transform: uppercase;
-  color: black;
+  color: white;
 }
+
 
 #team .team {
   margin-top: 40px;
@@ -908,23 +886,24 @@ Our Team Style
   margin-top: 20px;
   text-transform: uppercase;
   font-weight: 700;
-  color: black !important;
+  color: white;
 }
 #team .team p, span {
-  color: black;
+  color: white;
 }
 #team .team a {
-  color: black;
-  font-size: 14px;
+  color: white;
+  font-size: 22px;
   padding-right: 10px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
-#team .row {
-  margin-top: 50px;
+#team .team a:hover,
+#team .team a:focus,
+#team .team a:active {
+  color: #a3a3a3;
 }
 
 /* ==========================================================================
