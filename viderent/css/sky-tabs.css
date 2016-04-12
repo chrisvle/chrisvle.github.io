@@ -64,7 +64,7 @@
 }
 .sky-tabs > label:hover span span {
 	background: black;
-	color: #fff;
+	color: white;
 }
 .sky-tabs > label.disabled span span {
 	background: transparent;

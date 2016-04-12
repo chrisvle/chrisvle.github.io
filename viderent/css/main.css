@@ -817,13 +817,13 @@ Work Process Style
 #work-process {
   padding: 60px 0;
   text-align: center;
-  background-color: white;
+  background-color: #24242a;
 }
 #work-process .col-lg-3 {
   margin-top: 40px;
 }
 #work-process h2, light-sep, h6, span, h4 {
-  color: black;
+  color: white;
 }
 #work-process h4 {
   text-transform: uppercase;
@@ -831,17 +831,17 @@ Work Process Style
 #work-process span {
   font-size: 48px;
   margin-bottom: 15px;
-  color: black;
+  color: white;
 }
 
 /* ==========================================================================
 Fun Facts Style
 ========================================================================== */
 #fun-facts {
-  background: #24242a;
+  background: white;
   padding: 60px 0;
   text-align: center;
-  color:white;
+  color:black;
 }
 #fun-facts .col-lg-3 {
   margin-top: 40px;
@@ -849,7 +849,7 @@ Fun Facts Style
 }
 #fun-facts h2 {
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 #fun-facts p {
@@ -857,10 +857,10 @@ Fun Facts Style
 }
 #fun-facts h4 {
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 #fun-facts .number {
-  color: white;
+  color: black;
   font-weight: 700;
   padding: 10px 0;
   margin: 0;
@@ -887,7 +887,7 @@ Fun Facts Style
 Our Team Style
 ========================================================================== */
 #team img {
-  height:300px;
+  height:250px;
 }
 
 #team {
@@ -911,7 +911,7 @@ Our Team Style
   color: black !important;
 }
 #team .team p, span {
-  color: black;
+  color: white;
 }
 #team .team a {
   color: black;
