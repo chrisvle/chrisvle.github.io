@@ -23,6 +23,11 @@ body {
   margin-bottom: 40px;
 }
 
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 /* ==========================================================================
 Typography
 ========================================================================== */
@@ -651,7 +656,7 @@ Client Style
   margin-right: 60px;
   margin-left: 60px
   padding-bottom:5em;
-  height: 22em;
+  height: 10em;
 }
 
 .client-description p {
@@ -1160,7 +1165,7 @@ Media Queries Style
   #team p {
     padding-left: 25px;
     padding-right: 25px;
-    text-align: justify;
+    text-align: justpify;
   }
 
   footer h1 {
