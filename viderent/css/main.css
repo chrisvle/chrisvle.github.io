@@ -1144,4 +1144,26 @@ Media Queries Style
   #testimonials h5 {
     font-size: 18px;
   }
+
+  .btn-block{
+    width:50%;
+  }
+
+  #client h4 {
+    font-size:20px;
+  }
+
+  .client-description {
+    margin-right: 0px;
+  }
+
+  #team p {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+  }
+
+  footer h1 {
+    font-size: 32px;
+  }
 }
