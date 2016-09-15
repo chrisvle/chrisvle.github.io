@@ -39,14 +39,4 @@ Simple blog front end demo in order to learn AngularJS - You can add new posts, 
     };
 
   }]);
-
-  app.controller('CommentController', function(){
-    this.comment = {};
-    this.addComment = function(post){
-      this.comment.createdOn = Date.now();
-      post.comments.push(this.comment);
-      this.comment ={};
-    };
-  });
-
 })();
