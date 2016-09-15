@@ -1,55 +1,52 @@
-/**
- * AngularJS Tutorial 1
- * @author Nick Kaye <nick.c.kaye@gmail.com>
- */
+/*
 
-/**
- * Main AngularJS Web Application
- */
-var app = angular.module('tutorialWebApp', [
-  'ngRoute'
-]);
+Simple blog front end demo in order to learn AngularJS - You can add new posts, add comments, and like posts.
 
-/**
- * Configure the Routes
- */
-app.config(['$routeProvider', function ($routeProvider) {
-  $routeProvider
-    // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
-    // Pages
-    .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
-    .when("/faq", {templateUrl: "partials/faq.html", controller: "PageCtrl"})
-    .when("/pricing", {templateUrl: "partials/pricing.html", controller: "PageCtrl"})
-    .when("/services", {templateUrl: "partials/services.html", controller: "PageCtrl"})
-    .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
-    // Blog
-    .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
-    .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
-    // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
-}]);
+*/
 
-/**
- * Controls the Blog
- */
-app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
-  console.log("Blog Controller reporting for duty.");
-});
+(function(){
+  var app = angular.module('blogApp',[]);
 
-/**
- * Controls all other Pages
- */
-app.controller('PageCtrl', function (/* $scope, $location, $http */) {
-  console.log("Page Controller reporting for duty.");
+  app.controller('BlogController', ['$http', function($http){
 
-  // Activates the Carousel
-  $('.carousel').carousel({
-    interval: 5000
+    var blog = this;
+    blog.title = "AngularJS Blog App";
+
+    blog.posts = {};
+    $http.get('https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/posts_1.json').success(function(data){
+      blog.posts = data;
+    });
+
+    blog.tab = 'blog';
+
+    blog.selectTab = function(setTab){
+      blog.tab = setTab;
+      console.log(blog.tab)
+    };
+
+    blog.isSelected = function(checkTab){
+      return blog.tab === checkTab;
+    };
+
+    blog.post = {};
+    blog.addPost = function(){
+      blog.post.createdOn = Date.now();
+      blog.post.comments = [];
+      blog.post.likes = 0;
+      blog.posts.unshift(this.post);
+      blog.tab = 0;
+      blog.post ={};
+    };
+
+  }]);
+
+  app.controller('CommentController', function(){
+    this.comment = {};
+    this.addComment = function(post){
+      this.comment.createdOn = Date.now();
+      post.comments.push(this.comment);
+      this.comment ={};
+    };
   });
 
-  // Activates Tooltips for Social Links
-  $('.tooltip-social').tooltip({
-    selector: "a[data-toggle=tooltip]"
-  })
-});
+})();
