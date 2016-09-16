@@ -53,7 +53,8 @@
 
 			<div class="bd">
 				<div class="entry-content">
-					<p>This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
+					
+<p>This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we’ll learn exactly <em>how</em> Jekyll does what it does.</p>
 
 <h2 id="overview">Overview</h2>
@@ -287,6 +288,15 @@ All templates can contain Liquid code to work with your site’s data.</p>
 There is a special variable in all templates named : <code>content</code>.
 The <code>content</code> variable holds the page/post content including any sub-template content previously defined.
 Render the content variable wherever you want your main content to be injected into your template:</p>
+
+<pre><code>...
+&lt;body&gt;
+  &lt;div id="sidebar"&gt; ... &lt;/div&gt;
+  &lt;div id="main"&gt;
+    &#123;{content}&#125;
+  &lt;/div&gt;
+&lt;/body&gt;
+...</code></pre>
 
 <h3 id="sub-templates">Sub-Templates</h3>
 

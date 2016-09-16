@@ -3,16 +3,17 @@
 <channel>
         <title>Jekyll Bootstrap</title>
         <description>Jekyll Bootstrap - Name Lastname</description>
-        <link>http://username.github.io</link>
-        <atom:link href="http://username.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Thu, 15 Sep 2016 18:25:11 -0700</lastBuildDate>
-        <pubDate>Thu, 15 Sep 2016 18:25:11 -0700</pubDate>
+        <link>http://chrisvle.github.io/blog</link>
+        <atom:link href="http://chrisvle.github.io/blog/rss.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Thu, 15 Sep 2016 18:35:38 -0700</lastBuildDate>
+        <pubDate>Thu, 15 Sep 2016 18:35:38 -0700</pubDate>
         <ttl>60</ttl>
 
 
         <item>
                 <title>Jekyll Introduction</title>
-                <description>&lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
+                <description>
+&lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
@@ -247,6 +248,15 @@ There is a special variable in all templates named : &lt;code&gt;content&lt;/cod
 The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined.
 Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
 
+&lt;pre&gt;&lt;code&gt;...
+&amp;lt;body&amp;gt;
+  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
+  &amp;lt;div id=&quot;main&quot;&amp;gt;
+    &amp;#123;{content}&amp;#125;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h3 id=&quot;sub-templates&quot;&gt;Sub-Templates&lt;/h3&gt;
 
 &lt;p&gt;Sub-templates are exactly templates with the only difference being they
@@ -418,8 +428,8 @@ As noted, our main programming constraint is the fact that our API is limited to
 &lt;p&gt;Please take a look at &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
 or jump right into &lt;a href=&quot;&quot;&gt;Usage&lt;/a&gt; if you’d like.&lt;/p&gt;
 </description>
-                <link>http://username.github.io/lessons/2011/12/29/jekyll-introduction</link>
-                <guid>http://username.github.io/lessons/2011/12/29/jekyll-introduction</guid>
+                <link>http://chrisvle.github.io/blog/lessons/2011/12/29/jekyll-introduction</link>
+                <guid>http://chrisvle.github.io/blog/lessons/2011/12/29/jekyll-introduction</guid>
                 <pubDate>Thu, 29 Dec 2011 00:00:00 -0800</pubDate>
         </item>
 
