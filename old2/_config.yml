@@ -1,0 +1,40 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 3 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+markdown: kramdown
+# disqus: dbyll
+# google_analytics: dbyll
+title: My Blog
+
+defaults:
+  -
+    scope:
+      path: "chrisvle.github.io" # empty string for all files
+    values:
+      title: My Blog
+
+description: Blog
+author:
+  name: Christopher Le
+  # email: christophervule@gmail.com
+  # github: chrisvle
+  # twitter: dbtek
+  # pinterest: asd123
+  # linkedin: asd123
+  bio: 1 & Reflections
+  email_md5: 726351295ec82e145928582f595aa3aa
+
+# rss_path: feed.xml
+categories_path: "/categories.html"
+tags_path: "/tags.html"
+
+# set it as url of an image
+sidebar_background_image: "/my-hidden-blog/assets/media/bg.jpg"
+
+BASE_PATH: "/my-hidden-blog"
+
+gems:
+  - jekyll-paginate
