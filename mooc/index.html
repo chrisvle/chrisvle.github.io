@@ -620,7 +620,7 @@ function runIntervention() {
   $.post('runIntervention', JSON.stringify(dataToSend));
 }
 
-drawGraphs("abc.csv", false);
+drawGraphs("abc.csv", true);
 $('#getStudentPredictions').on("click", function() {
   drawGraphs("getLatestPrediction", true);
 });
