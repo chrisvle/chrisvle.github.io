@@ -359,7 +359,7 @@ function loadData(error, students) {
   function studentList(div) {
     window.selectedStudents = anonymizedId.top(Infinity);
     // Note studentsByDate is just a hack of flightsByDate from original
-    var studentsByDate = nestByDate.entries(anonymizedId.top(40));
+    var studentsByDate = nestByDate.entries(anonymizedId.top(Infinity));
     //
     div.each(function() {
       var date = d3.select(this).selectAll(".all-students")
